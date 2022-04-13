@@ -17,7 +17,7 @@ class clip_cog(commands.Cog):
 
         if voice_channel != None:
             vc = await voice_channel.connect()
-            vc.play(discord.FFmpegPCMAudio(executable = r'C:\Program Files\ffmpeg-2022-04-07-git-607ecc27ed-full_build\bin\ffmpeg.exe', source = r'C:\Users\andre\Documents\Programmatore\Setsuna-bot\Clips\bang.mp3'))
+            vc.play(discord.FFmpegPCMAudio(executable = r'/app/vendor/ffmpeg.exe', source = r'/app/Clips/bang.mp3'))
             
             while vc.is_playing():
                 time.sleep(.1)
