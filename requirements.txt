@@ -1,4 +1,5 @@
 discord
 google
 youtube_dl
-PyNaCl 
+PyNaCl
+ffmpeg
